@@ -18,3 +18,6 @@
    // infered
 	y := 10
 
+7. Los archivos dentro del mismo paquete pueden acceder a los metodos y variables publicas de los otros paquetes sin tener q importarlos.
+
+
