@@ -38,3 +38,12 @@
     var matriz [5][7]int
 
     make para crear slices con capacidad definida, buen uso para el rendimiento
+
+12. Map
+    Llave Valor
+    paises := make(map[string]string) //5 es la capacidad
+    for equipo, puntaje := range campeonato {
+		fmt.Printf("El equipo %s, tiene un puntaje de: %d \n", equipo, puntaje)
+	}
+   Agregar campeonato["Atletico"] = 33 //Si no existe lo agrega
+   delete(campeonato, "Real Madrid")

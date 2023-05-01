@@ -1,7 +1,7 @@
 package main
 
 import (
-	arreglosslices "github.com/fepc18/godesde0/arreglos-slices"
+	"github.com/fepc18/godesde0/mapas"
 )
 
 func main() {
@@ -22,13 +22,13 @@ func main() {
 	// funciones.LllamarClosure()
 	// numbertoExponencial := 6
 	// fmt.Println(numbertoExponencial, " exponencial 2=", funciones.Exponencial(numbertoExponencial))
+	/*
+		arreglosslices.MuestroArreglos()
 
-	arreglosslices.MuestroArreglos()
+		arreglosslices.MuestroSlice()
 
-	arreglosslices.MuestroSlice()
-
-	arreglosslices.Capacidades()
-
-	//mapas.MostrarMapas()
+		arreglosslices.Capacidades()
+	*/
+	mapas.MostrarMapas()
 
 }
