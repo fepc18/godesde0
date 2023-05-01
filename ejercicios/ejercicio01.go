@@ -13,6 +13,8 @@ func Funcion(valor string) (int, string) {
 			resString = "Menor o igual a 100"
 		}
 	}
+	resString = "El valor no es un numero"
+
 	return resInt, resString
 
 }

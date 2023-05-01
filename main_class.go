@@ -7,7 +7,7 @@ import (
 	"github.com/fepc18/godesde0/variables"
 )
 
-func main() {
+func main_class() {
 	var x int
 	x = 5
 	fmt.Println(x)
