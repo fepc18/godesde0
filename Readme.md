@@ -63,3 +63,12 @@
     Se puede tener varios defer
     Panic:   abortar la ejecucion con un mensaje
     Recover: capturar cualquier panic, ej. capturarlos y guardar en un lock antes   de   abortar un sistema --> debe usarse con el defer
+
+16. Asincronia: Son Goroutines
+    go goroutines.MiNombreLento("Felipe Pabon")
+    //Async await
+    go goroutines.MiNombreLento("Felipe Pabon", canalUno)
+ 	 var := <-canalUno //await _ no se captura el valor, solo se espera a que termine
+
+    Con defer para que hasta que no todos los canales terminen la ejecucion
+    defer func() { canal1 <- true }() //defer se ejecuta al final de la funcion

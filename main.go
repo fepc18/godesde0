@@ -1,7 +1,9 @@
 package main
 
 import (
-	deferpanic "github.com/fepc18/godesde0/defer-panic"
+	"fmt"
+
+	"github.com/fepc18/godesde0/goroutines"
 )
 
 func main() {
@@ -39,8 +41,18 @@ func main() {
 	Maria := new(modelos.Mujer)
 	ejerinterfaces.HumanoRespirando(Maria)*/
 
-	deferpanic.VemosDefer()
+	//******Ejercicio Defer y Panic*********
+	/*deferpanic.VemosDefer()
+	deferpanic.EjemploPanic()*/
 
-	deferpanic.EjemploPanic()
+	canalUno := make(chan bool)
+	go goroutines.MiNombreLento("Felipe Pabon", canalUno)
+
+	fmt.Println("Estoy aqui")
+	/*var x string
+	fmt.Scanln(&x)*/
+
+	//_ = <-canalUno //await _ no se captura el valor, solo se espera a que termine
+	defer func() { canalUno <- true }() //defer se ejecuta al final de la funcion
 
 }
