@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/fepc18/godesde0/users"
+	ejerinterfaces "github.com/fepc18/godesde0/ejer-interfaces" //Alias
+	"github.com/fepc18/godesde0/modelos"
 )
 
 func main() {
@@ -30,6 +31,11 @@ func main() {
 		arreglosslices.Capacidades()
 	*/
 	//mapas.MostrarMapas()
-	users.AltaUsuario()
+	//users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	ejerinterfaces.HumanoRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejerinterfaces.HumanoRespirando(Maria)
 
 }

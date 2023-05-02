@@ -8,7 +8,7 @@
 4. Build --> go build main.go
    ejecutarlo ./main o ./main.exe
 
-5. Syntaxis: Mayuscula Publica
+5. Syntaxis: Mayuscula Publica (minuscula local)
    Ej: MuestroEnteros(){
 6. Declaracion de variables
    // declarative
@@ -51,3 +51,11 @@
 13. Estructuras, no existe clases, sino Type
     Para agregar metodos se crea por fuera y se debe referenciar el type (*)
     Cuando se crea, no usa nulos sino asigna valores por defecto
+
+14. Interfaces: Modelo de comportamiento 
+    Con que struct tenga implementados, se infiera que esta implementando una interfaz
+
+    Herencia::::
+    type Mujer struct {
+         Hombre
+   }
