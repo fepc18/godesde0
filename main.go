@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/fepc18/godesde0/goroutines"
+	"github.com/fepc18/godesde0/webserver"
 )
 
 func main() {
@@ -45,14 +43,18 @@ func main() {
 	/*deferpanic.VemosDefer()
 	deferpanic.EjemploPanic()*/
 
-	canalUno := make(chan bool)
+	//*********Ejercicio Goroutines*********
+	/* canalUno := make(chan bool)
 	go goroutines.MiNombreLento("Felipe Pabon", canalUno)
 
-	fmt.Println("Estoy aqui")
+	fmt.Println("Estoy aqui")*/
 	/*var x string
 	fmt.Scanln(&x)*/
 
 	//_ = <-canalUno //await _ no se captura el valor, solo se espera a que termine
-	defer func() { canalUno <- true }() //defer se ejecuta al final de la funcion
+	//defer func() { canalUno <- true }() //defer se ejecuta al final de la funcion
 
+	//*********Ejercicio WebServer**********
+
+	webserver.MiWebServer()
 }
