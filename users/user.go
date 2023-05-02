@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fepc18/godesdecero/modelos"
+	"github.com/fepc18/godesde0/modelos"
 )
 
 func AltaUsuario() {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fepc18/godesde0/mapas"
+	"github.com/fepc18/godesde0/users"
 )
 
 func main() {
@@ -29,6 +29,7 @@ func main() {
 
 		arreglosslices.Capacidades()
 	*/
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+	users.AltaUsuario()
 
 }

@@ -47,3 +47,7 @@
 	}
    Agregar campeonato["Atletico"] = 33 //Si no existe lo agrega
    delete(campeonato, "Real Madrid")
+
+13. Estructuras, no existe clases, sino Type
+    Para agregar metodos se crea por fuera y se debe referenciar el type (*)
+    Cuando se crea, no usa nulos sino asigna valores por defecto
