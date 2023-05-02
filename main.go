@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/fepc18/godesde0/webserver"
+	"github.com/fepc18/godesde0/middleware"
 )
 
 func main() {
@@ -55,6 +55,8 @@ func main() {
 	//defer func() { canalUno <- true }() //defer se ejecuta al final de la funcion
 
 	//*********Ejercicio WebServer**********
+	//	webserver.MiWebServer()
 
-	webserver.MiWebServer()
+	//*********Ejercicio Middleware**********
+	middleware.MiMiddleware()
 }
