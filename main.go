@@ -1,8 +1,7 @@
 package main
 
 import (
-	ejerinterfaces "github.com/fepc18/godesde0/ejer-interfaces" //Alias
-	"github.com/fepc18/godesde0/modelos"
+	deferpanic "github.com/fepc18/godesde0/defer-panic"
 )
 
 func main() {
@@ -32,10 +31,16 @@ func main() {
 	*/
 	//mapas.MostrarMapas()
 	//users.AltaUsuario()
-	Pedro := new(modelos.Hombre)
+
+	//******************Ejercicio Interfaces******************
+	/*Pedro := new(modelos.Hombre)
 	ejerinterfaces.HumanoRespirando(Pedro)
 
 	Maria := new(modelos.Mujer)
-	ejerinterfaces.HumanoRespirando(Maria)
+	ejerinterfaces.HumanoRespirando(Maria)*/
+
+	deferpanic.VemosDefer()
+
+	deferpanic.EjemploPanic()
 
 }

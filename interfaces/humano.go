@@ -5,5 +5,5 @@ type Humano interface {
 	Pensar()
 	Comer()
 	Sexo() string
-	EstaVivo() bool // Este método pertenece a SerVivo
+	//EstaVivo() bool // Este método pertenece a SerVivo
 }

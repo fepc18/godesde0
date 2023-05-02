@@ -59,3 +59,7 @@
     type Mujer struct {
          Hombre
    }
+15. Defer: Funcion al ejecutarse al salir de una funcion
+    Se puede tener varios defer
+    Panic:   abortar la ejecucion con un mensaje
+    Recover: capturar cualquier panic, ej. capturarlos y guardar en un lock antes   de   abortar un sistema --> debe usarse con el defer
